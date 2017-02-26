@@ -1,8 +1,6 @@
 {
   "name": "fontcide",
-  "authors": [
-    "Diogo Salazar <daq@qad.com>"
-  ],
+  "authors": [ "Diogo Salazar <daq@qad.com>" ],
   "description": "Simple test plugin",
   "homepage": "http://www.qad.com",
   "keywords": [
