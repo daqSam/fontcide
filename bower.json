@@ -1,0 +1,22 @@
+{
+  "name": "fontcide",
+  "authors": [
+    "Diogo Salazar <daq@qad.com>"
+  ],
+  "description": "Simple test plugin",
+  "homepage": "http://www.qad.com",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "jquery-plugin",
+  ],
+  "main": "src/jquery.fontcide.js",
+  "dependencies": {
+    "jquery": "1"
+  },
+  "ignore": [
+    "npm-debug.log",
+    "bower_components",
+    "node_modules"
+  ]
+}
