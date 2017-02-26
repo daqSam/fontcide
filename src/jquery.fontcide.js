@@ -86,7 +86,7 @@
 		attach();
 	};
 
-	$[pluginName] = function (command) {
+	window[pluginName] = function (command) {
 		if (command === "resize") {
 			resizeHandler();
 		}
