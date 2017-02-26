@@ -3,14 +3,15 @@
 	<head>
 		<title>jQuery Boilerplate</title>
 		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script src="../bower_components/jquery-attrchange/js/attrchange.js"></script>
 		<script src="../src/jquery.fontcide.js"></script>
 	</head>
 	<body>
-		<div id="element">Hello World</div>
+		<div id="element" data-fontcide data-fontcide-compressor="0.5">Hello World</div>
 		<div id="element2">Olá Mundo</div>
 		<script>
 			$( function() {
-				$( "#element" ).fontcide({ compressor: 0.5 });
+//				$( "#element" ).fontcide({ compressor: 0.5 });
                 $( "#element2" ).fontcide({ compressor: 1 });
 			} );
 		</script>

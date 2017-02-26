@@ -1,6 +1,8 @@
 {
   "name": "fontcide",
-  "authors": [ "Diogo Salazar <daq@qad.com>" ],
+  "authors": [
+    "Diogo Salazar <daq@qad.com>"
+  ],
   "description": "Simple test plugin",
   "homepage": "http://www.qad.com",
   "keywords": [
@@ -10,7 +12,13 @@
   ],
   "main": "src/jquery.fontcide.js",
   "dependencies": {
-    "jquery": "1"
+    "jquery": "1",
+    "jquery-attrchange": "https://github.com/nunenuh/jquery-attrchange.git#2.0.2"
+  },
+  "overrides": {
+    "jquery-attrchang": {
+      "main": "js/attrchange.js"
+    }
   },
   "ignore": [
     "npm-debug.log",
