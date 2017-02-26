@@ -1,1 +1,3 @@
 # fontcide
+
+Simple test plugin
