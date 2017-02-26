@@ -1,5 +1,4 @@
-;
-(function ($, window, document, undefined) {
+;(function ($, window, document, undefined) {
 
 	"use strict";
 
@@ -14,12 +13,12 @@
 		eventName = "resize." + pluginName + " orientationchange." + pluginName;
 
 	var plugins = [];
-
-	$(window).on(eventName, function () {
+	var resizeHandler = function () {
 		$(plugins).each(function () {
 			$(this).data("plugin_" + pluginName).resize();
 		});
-	});
+	};
+	$(window).on(eventName, resizeHandler);
 
 	var Plugin = function (element, options) {
 		//Instance variables
@@ -85,6 +84,12 @@
 		//Initialization
 		this.resize();
 		attach();
+	};
+
+	$[pluginName] = function (command) {
+		if (command === "resize") {
+			resizeHandler();
+		}
 	};
 
 	$.fn[pluginName] = function (options) {
