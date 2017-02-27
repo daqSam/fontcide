@@ -46,6 +46,9 @@
 			var checkSelf = display == "block" || (display == "inline-block" && ($(element).attr("style") || "").indexOf("width:") >= 0);
 			var target = checkSelf ? $(element) : $(element).parent();
 
+			if( target.width() > window.innerWidth )
+				$(element).css("font-size", "");
+
 			$(element).css("font-size",
 				Math.max(Math.min(target.width() / (settings.compressor * 10), parseFloat(settings.max)),
 					parseFloat(settings.min)));
