@@ -12,7 +12,7 @@
   ],
   "main": "src/jquery.fontcide.js",
   "dependencies": {
-    "jquery": "1",
+    "jquery": "2.1.1",
     "jquery-attrchange": "https://github.com/nunenuh/jquery-attrchange.git#2.0.2"
   },
   "overrides": {
